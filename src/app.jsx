@@ -1,4 +1,5 @@
 import "./app.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
 import ProductAll from "./pages/productAll";
 import ProductDetail from "./pages/productDetail";
