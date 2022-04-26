@@ -2,6 +2,11 @@
   display: flex;
   justify-content: flex-end;
   margin: 20px;
+  cursor: pointer;
+}
+
+.login-btn div {
+  margin-left: 0.5em;
 }
 
 .nav-section {

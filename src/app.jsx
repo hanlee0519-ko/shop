@@ -5,6 +5,7 @@ import ProductAll from "./pages/productAll";
 import ProductDetail from "./pages/productDetail";
 import Login from "./pages/login";
 import Navbar from "./components/navbar";
+import { useState, useEffect } from "react";
 
 // 1. 전체상품, 로그인, 상세 페이지
 // 1-1. 네비게이션 바 만들기
@@ -17,12 +18,21 @@ import Navbar from "./components/navbar";
 // 8. 상품을 검색할 수 있다.
 
 function App() {
+  const [authenticate, setAuthenticate] = useState(false);
+
+  useEffect(() => {
+    console.log(authenticate);
+  }, [authenticate]);
+
   return (
     <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<ProductAll />} />
-        <Route path="/login" element={<Login />} />
+        <Route
+          path="/login"
+          element={<Login setAuthenticate={setAuthenticate} />}
+        />
         <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
