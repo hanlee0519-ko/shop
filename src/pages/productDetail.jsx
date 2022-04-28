@@ -4,7 +4,6 @@ import { Container, Row, Col, Dropdown, Button } from "react-bootstrap";
 
 const ProductDetail = () => {
   let { id } = useParams();
-
   const [product, setProduct] = useState(null);
 
   const getProdocutDetail = async () => {
