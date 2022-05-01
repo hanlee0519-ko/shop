@@ -1,11 +1,12 @@
-.login-btn {
+.login-area {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 20px;
   cursor: pointer;
 }
 
-.login-btn div {
+.login-area span {
   margin-left: 0.5em;
 }
 
